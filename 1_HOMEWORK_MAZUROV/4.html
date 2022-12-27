@@ -25,21 +25,13 @@
 
 Уточнение: пользователь всегда вводит корректное положительное целое число.
 
-
-
-
-
-
 -->
 <script>
   "use strict";
-  
   const inputData = parseInt(prompt('Введите число что бы узнать количество сотен, десятков и единиц-'));
-
   const numbers = inputData % 10;
   const tens = Math.trunc(inputData%100/10);
   const hundreds = Math.trunc(inputData%1000/100);
-
   alert(`В числе ${inputData} количество сотен: ${hundreds}, десятков: ${tens}, единиц: ${numbers}`);
 </script>
 </body>
